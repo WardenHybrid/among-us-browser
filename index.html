@@ -3,66 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Among Us Browser</title>
+    <title>Your Homepage</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            background-image: url('among-us-space-background-8k-wallpaper-uhdpaper.com-923@0@f.jpg'); /* Replace 'background-image.jpg' with your actual image file */
+            background-size: cover; /* Adjust as needed */
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 1em;
             text-align: center;
         }
 
         nav {
             background-color: #444;
-            padding: 10px;
+            padding: 1em;
             text-align: center;
         }
 
-        nav input[type="text"] {
-            width: 70%;
-            padding: 8px;
-            margin-right: 10px;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
         }
 
-        nav button {
-            padding: 8px;
+        main {
+            padding: 2em;
         }
 
-        iframe {
+        footer {
+            background-color: #000FF;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
             width: 100%;
-            height: calc(100vh - 100px); /* Adjust as needed */
-            border: none;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>the susiest browser *vents*</h1>
+        <h1>Your Website Name</h1>
     </header>
 
     <nav>
-        <input type="search" id="urlInput" placeholder="search the sus-net">
-        <button onclick="loadPage(https://google.com)">Go</button>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </nav>
 
-    <iframe id="webBrowser" src="https://google.com" frameborder="0"></iframe>
+    <main>
+        <h2>Welcome to Our Homepage</h2>
+        <p>This is the main content area of your homepage. You can add text, images, and other elements here.</p>
+    </main>
 
-    <script>
-        function loadPage() {
-            var urlInput = document.getElementById('urlInput');
-            var webBrowser = document.getElementById('webBrowser');
-            
-            webBrowser.src = urlInput.value;
-        }
-    </script>
+    <footer>
+        &copy; 2024 Your Website Name. All rights reserved.
+    </footer>
 
 </body>
 </html>
-
