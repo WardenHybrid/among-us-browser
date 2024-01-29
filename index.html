@@ -8,21 +8,61 @@
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav input[type="text"] {
+            width: 70%;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        nav button {
+            padding: 8px;
         }
 
         iframe {
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 100px); /* Adjust as needed */
             border: none;
         }
     </style>
 </head>
 <body>
-    <iframe id="web-browser" src="https://google.com" frameborder="0"></iframe>
+
+    <header>
+        <h1>Simple Web Browser</h1>
+    </header>
+
+    <nav>
+        <input type="search" id="urlInput" placeholder="https://google.com">
+        <button onclick="loadPage(https://google.com)">Go</button>
+    </nav>
+
+    <iframe id="webBrowser" src="https://google.com" frameborder="0"></iframe>
 
     <script>
-        // You can add JavaScript code here for additional functionality
+        function loadPage() {
+            var urlInput = document.getElementById('urlInput');
+            var webBrowser = document.getElementById('webBrowser');
+            
+            webBrowser.src = urlInput.value;
+        }
     </script>
+
 </body>
 </html>
+
