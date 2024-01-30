@@ -1,108 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Among Us Home Page</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: url('crewmate.png') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Among Us Browser</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
 
-        header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            text-align: center;
-        }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-        main {
-            padding: 20px;
-        }
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+    }
 
-        .search-bar {
-            text-align: center;
-            margin: 20px 0;
-        }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 5px 10px;
+      margin-top: 20px;
+      background-color: #fff;
+    }
 
-        form {
-            display: inline-block;
-        }
+    .search-bar input[type="text"] {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+    }
 
-        input {
-            padding: 10px;
-            margin-right: 10px;
-        }
+    .search-button {
+      border: none;
+      background-color: #59c359; /* Among Us "Use" button color */
+      color: #fff;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+    }
 
-        button {
-            padding: 10px 20px;
-            background-color: #4285f4;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #2a56c6;
-        }
-
-        .tasks, .crewmates {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Among Us Home Page</h1>
-        <p>Sus level: 100%</p>
-    </header>
-
-    <main>
-        <section class="search-bar">
-            <form action="https://www.google.com/search" method="GET" target="_blank">
-                <input type="text" name="q" placeholder="Search the sus-net...">
-                <button type="submit">Search</button>
-            </form>
-        </section>
-
-        <section class="tasks">
-            <h2>Tasks</h2>
-            <ul>
-                <li>Complete navigation bar</li>
-                <li>Fix electrical issues</li>
-                <li>Download emergency meeting button</li>
-            </ul>
-        </section>
-        
-        <section class="crewmates">
-            <h2>Crewmates</h2>
-            <p>Always watch your back!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Among Us</p>
-    </footer>
+  <div class="container">
+    <img class="logo" src="crewmate.png" alt="Crewmate Image">
+    <div class="search-bar">
+      <input type="text" placeholder="Search the sus-net">
+      <button class="search-button">Use</button>
+    </div>
+  </div>
 </body>
 </html>
